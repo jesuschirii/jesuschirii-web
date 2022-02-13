@@ -1,0 +1,231 @@
+/* Commit de ejemplo */
+
+/* Variables */
+
+:root {
+  --bg-header-color: #2f2f2f;
+  --bg-color-1: #7510f7;
+  --bg-color-2: #040d21;
+  --bg-color-3: black;
+  --text-color: #fff;
+  --text-color2: #ccd6f6;
+}
+
+/* Reset Styles */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+body {
+  background-color: var(--bg-color-3);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* BOTON MENU */
+
+.btn-hamburger {
+  position: fixed;
+  background-color: green;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.btn-lines {
+  border: thick solid black;
+  width: 2rem;
+  height: 0;
+}
+
+/*****************************CABECERA ************************************/
+
+.header-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bg-header-color);
+  text-align: center;
+  height: 4rem;
+  border-radius: 50px;
+}
+
+.logo {
+  border: thick solid white;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+/* ********************************SECCIONES********************************* */
+
+.w-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container {
+  position: relative;
+  min-height: inherit;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: inherit;
+  width: 100%;
+}
+
+.title-section {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* ***********************CONTENIDO  PRINCIPAL************************/
+
+.c-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 990;
+  margin-bottom: 6rem;
+}
+
+/* .img {
+  position: absolute;
+  width: 14rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+ */
+/********************** ABOUT ME********************* */
+
+.skill {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  padding: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.skill-title {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+}
+
+.about-me {
+  padding-bottom: 14rem;
+}
+/* **********************WORKS******************* */
+
+.w-work {
+  background-color: white;
+}
+
+.work {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  margin-top: -14rem;
+  padding: 2rem 1rem;
+}
+
+.work-card {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.button-work {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  border: thick solid black;
+  border-radius: 50px;
+}
+
+/***************** Contact********* */
+
+/* *******FOOTER********* */
+
+hr {
+  border: thin solid rgba(100, 255, 218, 0.3);
+}
+
+.footer {
+  width: 100%;
+  height: 30vh;
+}
